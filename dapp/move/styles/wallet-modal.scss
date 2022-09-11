@@ -1,0 +1,28 @@
+.wallet-modal {
+  .ant-modal-confirm-content {
+    margin-left: 0 !important;
+  }
+
+  .wallet_item {
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+
+    img {
+      width: 30px;
+    }
+
+    button {
+      min-width: 100px;
+    }
+
+    &:hover {
+      background: antiquewhite;
+    }
+  }
+}

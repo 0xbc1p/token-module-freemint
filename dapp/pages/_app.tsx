@@ -1,4 +1,4 @@
-import '../styles/globals.css'
+import '../styles/globals.scss'
 import type {AppProps} from 'next/app'
 import 'antd/dist/antd.css';
 import {
@@ -22,13 +22,14 @@ function MyApp({Component, pageProps}: AppProps) {
             new AptosWalletAdapter(),
             new FewchaWalletAdapter(),
             new PontemWalletAdapter(),
-            new SpikaWalletAdapter()
+            new SpikaWalletAdapter(),
             // new NightlyWalletAdapter()
         ],
         []
     );
     return <WalletProvider
         wallets={wallets}
+        autoConnect={true}
         onError={(error: Error) => {
             console.log('wallet errors: ', error);
             message.error(error.message);

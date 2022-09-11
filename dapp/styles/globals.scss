@@ -1,0 +1,51 @@
+@import "./move/styles/wallet-modal.scss";
+@import "./componenst/navbar.scss";
+
+body {
+  background-image: url("../public/bg.jpeg");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color: white !important;
+}
+
+.main {
+  min-height: calc(100vh - 75px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .information {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+
+    .token {
+      width: 100%;
+      display: flex;
+      min-width: 200px;
+      justify-content: space-between;
+      align-items: center;
+
+      &-name {
+        color: #2ed8a7;
+        font-size: 1.4rem;
+        font-weight: bold;
+      }
+
+      &-balance {
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.ant-btn-primary {
+  color: black !important;
+  min-width: 120px !important;
+  font-weight: bold !important;
+  background-color: #2ed8a7 !important;
+  border: #2ed8a7 !important;
+  border-radius: 10px !important;
+}
