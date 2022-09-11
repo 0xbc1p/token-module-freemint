@@ -74,7 +74,7 @@ const Home: NextPage = () => {
                                 </div>}
                                 {apt && <div className="token">
                                     <div className="token-name">
-                                        WAPT
+                                        APT
                                     </div>
                                     <div className="token-balance">
                                         {apt?.data?.coin?.value}
