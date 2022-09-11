@@ -1,0 +1,13 @@
+[package]
+name = "move-init"
+version = "0.0.1"
+
+[addresses]
+owner = "0xfb407449ecdee47b9a8ff7f7d3b6357683bb844ac9b8f1df8d8e27256bc66684"
+[dependencies]
+#AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework", rev = "main" }
+#AptosStdlib = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-stdlib", rev = "main" }
+
+AptosStdlib = { local = "../aptos-core/aptos-move/framework/aptos-stdlib" }
+AptosFramework = { local = "../aptos-core/aptos-move/framework/aptos-framework" }
+
